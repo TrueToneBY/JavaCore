@@ -13,6 +13,7 @@ public class WriteToFile {
         printWriter.println("Test ro one");
         printWriter.println("Test ro duo");
         printWriter.println("Searilizacia(Zapis v object2)");
+        printWriter.println("Privet Java Core" + " Hello)");
 
         printWriter.close();
 
