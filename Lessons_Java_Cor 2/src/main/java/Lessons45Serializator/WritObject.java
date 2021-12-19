@@ -21,7 +21,7 @@ public class WritObject {
                 oOs.writeObject(person);
             }
 
-            oOs.close();
+            //oOs.close();
         } catch (IOException e) {
             e.printStackTrace();
         }

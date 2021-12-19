@@ -1,10 +1,15 @@
 package Lessons45Serializator;
 
+import java.io.Serial;
 import java.io.Serializable;
 
 public class Person implements Serializable {
-    private int id;
-    private String name;
+
+    @Serial
+    private static final long serialVersionUID = 5019072141391854895L;
+    private  int id;
+    private  String name;
+
 
     public int getId() {
         return id;
