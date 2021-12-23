@@ -1,11 +1,9 @@
 package Lessons44File;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.PrintWriter;
+import java.io.*;
 
 public class WriteToFile {
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) throws IOException {
         File file = new File("Test2");
         PrintWriter printWriter = new PrintWriter(file);
 
@@ -16,6 +14,13 @@ public class WriteToFile {
         printWriter.println("Privet Java Core" + " Hello)");
 
         printWriter.close();
+
+        FileReader fileReader = new FileReader("Test2");
+        int c;
+        while ((c = fileReader.read())!=-1){
+            System.out.print((char) c);
+        }
+
 
     }
 }

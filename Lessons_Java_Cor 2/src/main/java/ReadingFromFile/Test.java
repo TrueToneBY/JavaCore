@@ -3,15 +3,18 @@ package ReadingFromFile;
 import javax.sound.sampled.Line;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class Test {
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) throws IOException {
 
 
 
         File file = new File("Test2");
+
 
         Scanner sc = new  Scanner(file);
 
